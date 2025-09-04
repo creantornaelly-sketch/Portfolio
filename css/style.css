@@ -1,0 +1,873 @@
+@charset "UTF-8";
+
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CSS Document */
+:root {
+    --primary-color: #031A38;
+}
+/*Navigateur*/
+nav{
+	
+    background-image:
+    linear-gradient(rgba(68, 143, 255, 0.439), rgba(77, 166, 255, 0.439)),
+    url("papier.jpg");
+	padding: 10px 20px;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+
+nav ul{
+	list-style: none;
+	text-align: center;
+	display: flex;
+}
+
+nav ul li {
+	display: flex;
+	padding: 10px 30px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: nowrap; /* Empêche les retours à la ligne */
+}
+.nav-link {
+    white-space: nowrap !important;
+    display: inline-block !important;
+}
+.navbar-nav li {
+    min-width: max-content !important;
+}
+
+
+a {
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #031A38 !important;
+	text-decoration: none;
+	
+}
+
+h4 {
+    color: #031A38 !important;
+    font-family: Baskerville, serif;
+
+}
+
+nav input{
+	color: #5093E1;
+	position: 50px;
+}
+
+/*header*/
+.main-header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background: transparent;
+    transition: 0.3s background;
+}
+
+.main-header .navbar{
+    padding: 15px 0;
+
+}
+
+.main-header .navbar-nav > li{
+    padding: 0 10px;
+
+}
+
+.main-header.navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+/*Acceuil*/
+
+
+body {
+        background-image: url("cadrille.jpg");
+     
+}
+#coverprairie {
+	display: flex;
+	width: 100%;
+	
+}
+
+/* stylisation du titre hero */
+.textprairie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: "Barriecito", system-ui;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap; /* Empêche les coupures */
+}
+
+/*Couleur des lettres*/
+
+.l1 {
+   background-color: #ffb254; 
+}
+.l2 {
+   background-color: #6cb1fa; 
+}
+.l3 {
+   background-color: #B2A4D4; 
+} 
+.l4 {
+   background-color: #D36135; 
+}
+.l5 {
+   background-color: #9CAF88; 
+}
+.l6 {
+   background-color: #4A90A4; 
+}
+.l7 {
+   background-color: #f9d09d; 
+}
+.l8 {
+   background-color: #ffb254; 
+}
+.l9 {
+   background-color: #D36135; 
+}
+.l10 {
+   background-color: #B2A4D4; 
+}
+.l11 {
+   background-color: #f9d09d; 
+}
+.l12 {
+   background-color:#4A90A4; 
+}
+.l13 {
+   background-color: #ffb254;
+   border-radius: 5%; 
+}
+.l14 {
+   background-color: #6cb1fa; 
+}
+.l15 {
+   background-color: #D36135; 
+}
+.l16 {
+   background-color: #9CAF88; 
+}
+.l17 {
+   background-color:  #B2A4D4; 
+}
+.l18 {
+   background-color:#4A90A4; 
+}
+.l19 {
+   background-color: #9CAF88; 
+}
+.l20 {
+   background-color: #ffb254; 
+}
+
+.space {
+    width: 20px;
+}
+
+.textprairie span {
+    display: inline-block;
+    animation: wave 2.5s infinite ease-in-out;
+}
+/* Délais pour chaque lettre */
+.textprairie span:nth-child(1) { animation-delay: 0s; }
+.textprairie span:nth-child(2) { animation-delay: 0.1s; }
+.textprairie span:nth-child(3) { animation-delay: 0.2s; }
+.textprairie span:nth-child(4) { animation-delay: 0.3s; }
+.textprairie span:nth-child(5) { animation-delay: 0.4s; }
+.textprairie span:nth-child(6) { animation-delay: 0.5s; }
+.textprairie span:nth-child(7) { animation-delay: 0.6s; }
+.textprairie span:nth-child(8) { animation-delay: 0.7s; }
+.textprairie span:nth-child(9) { animation-delay: 0.8s; }
+.textprairie span:nth-child(10) { animation-delay: 0.9s; }
+.textprairie span:nth-child(11) { animation-delay: 1s; }
+.textprairie span:nth-child(12) { animation-delay: 1.1s; }
+.textprairie span:nth-child(13) { animation-delay: 1.2s; }
+.textprairie span:nth-child(14) { animation-delay: 1.3s; }
+.textprairie span:nth-child(15) { animation-delay: 1.4s; }
+.textprairie span:nth-child(16) { animation-delay: 1.5s; }
+.textprairie span:nth-child(17) { animation-delay: 1.6s; }
+.textprairie span:nth-child(18) { animation-delay: 1.7s; }
+.textprairie span:nth-child(19) { animation-delay: 1.8s; }
+.textprairie span:nth-child(20) { animation-delay: 1.9s; }
+.textprairie span:nth-child(21) { animation-delay: 2.0s; }
+.textprairie span:nth-child(22) { animation-delay: 2.1s; }
+.textprairie span:nth-child(23) { animation-delay: 2.2s; }
+.textprairie span:nth-child(24) { animation-delay: 2.3s; }
+
+/* Animation de vague */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/*À propos*/
+.apropos {
+	text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #2B5E99!important;
+	font-size: 50px;
+    
+}
+
+
+
+#about {
+    background-image: url("rose.png");
+    background-size: 1200px 1020px; /* largeur hauteur */
+	
+}
+
+#textapropos {
+	color: #2B5E99;
+	text-align: center;
+    text-shadow: #031A38;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 100px 0px;
+	/*Le texteapropos est dans le apropos le blocage peut venir de là*/
+	
+	
+}
+
+#portrait {
+  width: 300px; /* taille de l'image*/
+    height: auto;
+   
+}
+ 
+/*Projets*/
+.titre {
+	text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #FF8D00!important;
+	font-size: 50px;
+	transform: translateY();
+}
+
+#text-mesprojets {
+    text-align: center;
+	color: #2B5E99!important;
+	font-size: 20px;
+	transform: translateY();
+    padding-bottom: 30px;
+}
+
+#communication {
+	text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #5093E1!important;
+	font-size: 50px;
+	transform: translateY();
+}
+
+#text-communication {
+    text-align: center;
+	color: #2B5E99!important;
+	font-size: 20px;
+	transform: translateY();
+    padding-bottom: 30px;
+}
+
+#design {
+	text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #5093E1!important;
+	font-size: 50px;
+	transform: translateY();
+}
+
+#text-design {
+    text-align: center;
+	color: #2B5E99!important;
+	font-size: 20px;
+	transform: translateY();
+    padding-bottom: 30px;
+}
+
+
+.polaroid img {
+width: 100%;
+display: block;
+}
+
+.polaroid2 img {
+width: 100%;
+display: block;
+}
+
+.polaroid {
+ width: 235px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+	margin-bottom: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.polaroid2 {
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.polaroid:hover {
+  border: 5px solid #FF8D00;
+}
+
+.polaroid2:hover {
+  border: 5px solid #FF8D00;
+}
+
+#projects2 .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.commentaire {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+.text-center {
+	font-family: "Barriecito", system-ui;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;  /* Aligner l'image et le texte verticalement */
+    justify-content: center; /* Centrer le contenu */
+    gap: 20px;  /* Espacement entre l'image et le texte */
+    padding: 20px;
+}
+
+/* Section Projets par UE - Style Scrapbook */
+.barriecito-regular {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Section Projets */
+#projects {
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.titre {
+    text-align: center;
+    font-family: "Barriecito", system-ui;
+    padding: 20px;
+    color: #FF8D00 !important;
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#text-mesprojets {
+    text-align: center;
+    color: #2B5E99 !important;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: "Amiko", sans-serif;
+}
+
+/* Onglets UE style scrapbook */
+.ue-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.ue-tab {
+    background: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-family: "Barriecito", system-ui;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: rotate(-1deg);
+    margin: 5px;
+}
+
+.ue-tab:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.ue-tab:nth-child(3) {
+    transform: rotate(-0.5deg);
+}
+
+/* Couleurs des onglets UE */
+.ue-tab[data-ue="concevoir"] {
+    background: linear-gradient(135deg, #B2A4D4 0%, #9b8bc4 100%);
+    color: white;
+}
+
+.ue-tab[data-ue="exprimer"] {
+    background: linear-gradient(135deg, #ffb254 0%, #ff9d2b 100%);
+    color: white;
+}
+
+.ue-tab[data-ue="comprendre"] {
+    background: linear-gradient(135deg, #9CAF88 0%, #8a9e75 100%);
+    color: white;
+}
+
+.ue-tab[data-ue="developper"] {
+    background: linear-gradient(135deg, #6cb1fa 0%, #4ea3f7 100%);
+    color: white;
+}
+
+.ue-tab[data-ue="entreprendre"] {
+    background: linear-gradient(135deg, #4A90A4 0%, #3d7a8c 100%);
+    color: white;
+}
+
+.ue-tab:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ue-tab.active {
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    position: relative;
+}
+
+/* Petites décorations sur les onglets */
+.ue-tab::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ue-tab[data-ue="concevoir"]::after {
+    content: '✨';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+}
+
+.ue-tab[data-ue="exprimer"]::after {
+    content: '🎨';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+}
+
+.ue-tab[data-ue="comprendre"]::after {
+    content: '🧠';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+}
+
+.ue-tab[data-ue="developper"]::after {
+    content: '💻';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+}
+
+.ue-tab[data-ue="entreprendre"]::after {
+    content: '🚀';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+}
+
+/* Container des projets */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ue-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.ue-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titre de la catégorie active */
+.ue-category-title {
+    text-align: center;
+    font-family: "Barriecito", system-ui;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2B5E99;
+    position: relative;
+}
+
+/* Grille des projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Polaroid style scrapbook */
+.polaroid {
+    background: white;
+    padding: 15px 15px 40px 15px;
+    border-radius: 10px;
+    box-shadow: 
+        0 6px 12px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transform: rotate(-2deg);
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 20px;
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.polaroid:nth-child(3n) {
+    transform: rotate(-1deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.commentaire {
+    text-align: center;
+    padding: 15px 10px 5px 10px;
+    font-size: 14px;
+    font-family: "Amiko", sans-serif;
+    font-weight: 600;
+    color: #031A38;
+    position: relative;
+}
+
+/* Petites décorations sur les polaroids */
+.polaroid::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: #ffb254;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.polaroid:nth-child(2)::before {
+    background: #B2A4D4;
+    border-radius: 50%;
+    transform: none;
+}
+
+.polaroid:nth-child(3)::before {
+    background: #9CAF88;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: none;
+}
+
+.polaroid:nth-child(4)::before {
+    background: #6cb1fa;
+    border-radius: 2px;
+}
+
+.polaroid:nth-child(5)::before {
+    background: #4A90A4;
+    border-radius: 50%;
+    transform: none;
+}
+
+/* Petites étoiles */
+.polaroid::after {
+    content: '★';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #FF8D00;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+/* Bordure colorée selon l'UE */
+.ue-content[data-ue="concevoir"] .polaroid:hover {
+    border-top: 3px solid #B2A4D4;
+}
+
+.ue-content[data-ue="exprimer"] .polaroid:hover {
+    border-top: 3px solid #ffb254;
+}
+
+.ue-content[data-ue="comprendre"] .polaroid:hover {
+    border-top: 3px solid #9CAF88;
+}
+
+.ue-content[data-ue="developper"] .polaroid:hover {
+    border-top: 3px solid #6cb1fa;
+}
+
+.ue-content[data-ue="entreprendre"] .polaroid:hover {
+    border-top: 3px solid #4A90A4;
+}
+
+/* Formes décoratives flottantes */
+.decoration-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.deco-element {
+    position: absolute;
+    opacity: 0.2;
+    animation: floatAround 20s infinite ease-in-out;
+}
+
+.deco-element:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    width: 15px;
+    height: 15px;
+    background: #ffb254;
+    border-radius: 50%;
+    animation-delay: -3s;
+}
+
+.deco-element:nth-child(2) {
+    top: 80%;
+    left: 90%;
+    width: 12px;
+    height: 12px;
+    background: #B2A4D4;
+    transform: rotate(45deg);
+    animation-delay: -10s;
+}
+
+.deco-element:nth-child(3) {
+    top: 30%;
+    left: 95%;
+    width: 18px;
+    height: 18px;
+    background: #9CAF88;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation-delay: -15s;
+}
+
+@keyframes floatAround {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(180deg);
+    }
+    75% {
+        transform: translateY(-20px) rotate(270deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ue-tabs {
+        gap: 10px;
+    }
+    
+    .ue-tab {
+        padding: 12px 18px;
+        font-size: 14px;
+        margin: 3px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        padding: 10px;
+    }
+    
+    .titre {
+        font-size: 40px;
+    }
+}
+
+/*Me contacter*/
+
+.text-center {
+    text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #2B5E99!important;
+	font-size: 50px;
+	transform: translateY();
+}
+
+.form-label {
+    text-align: center;
+	color: #2B5E99!important;
+	font-size: 15px;
+	transform: translateY();
+}
+
+#contact {
+   background-image:
+    
+    url("papier.jpg");
+    padding: 50px 20px;
+    display: flex;
+}
+
+#submitButton {
+    background-color:#2B5E99;
+}
+
+/*Footer*/
+.footer {
+    background-color: #1B406A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #FFFFFF;
+    color: #5093E1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .nav a{
+    font-size: 20px;
+    color:#5093E1;
+}
+
+.footer .nav a:hover {
+    color:#FF8D00;
+}
+.footer .nav a + a {
+    margin-left: 18px;
+}
+
+.m-0 {
+    margin: 0;
+    font-size: 14px;
+    align-items: center;
+}

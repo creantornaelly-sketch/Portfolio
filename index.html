@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Barriecito&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header class="main-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+			
+            <!--Logo-->
+			
+            <div class="container">
+               <a href="#" class="navbar-brand">
+                <h4 class="mb-0">Naelly Creantor</h4>
+               </a> 
+            </div>
+
+            <!--Menu-->
+			<div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+
+            <ul class="navbar-nav mx-auto">
+				<li><a href="" class="nav-link">Accueil</a></li>
+				<li><a href="#mesprojets" class="nav-link">Projet</a></li>
+				<li><a href="#apropos" class="nav-link">À propos</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			</div>
+            
+            <!--Button mobile-->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+             </button>
+        <div class="fond"></div>
+        </nav>
+		
+		     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </header>
+
+    <main>
+		<!--Page d'acceuil-->
+        <section id="acceuil" style="min-height: 100vh;">
+    
+		<!--Titre hero-->
+		<div class="textprairie">
+    <div class="line">
+        <span class="l1">W</span><span class="l2">e</span><span class="l3">l</span><span class="l4">c</span><span class="l5">o</span><span class="l6">m</span><span class="l7">e</span>
+        <span class="space"></span>
+        <span class="l8">t</span><span class="l9">o</span>
+    </div>
+    <div class="line">
+        <span class="l10">m</span><span class="l11">y</span>
+        <span class="space"></span>
+        <span class="l12">u</span><span class="l13">n</span><span class="l14">i</span><span class="l15">v</span><span class="l16">e</span><span class="l17">r</span><span class="l18">s</span><span class="l19">e</span><span class="l20">!</span>
+    </div>
+</div>
+			
+        
+
+         </section>
+         <!--À propos-->
+        <section id="about">
+			
+			<div class="apropos" id="apropos">À propos</div>
+			<div class="about-container">
+				<img src="images/ME.png" alt="Ma photo" id="portrait">
+            
+			<p id="textapropos">Bonjour, je suis CREANTOR Naelly!
+                Passionnée par le digital et la création de contenu, je suis actuellement en deuxième année de BUT MMI en alternance. 
+                Curieuse, créative et organisée, j’ai acquis des compétences variées en design, communication et gestion des réseaux sociaux. 
+                J’aime concevoir des visuels impactants et élaborer des stratégies digitales adaptées aux besoins des entreprises. 
+                Toujours en quête de nouveaux défis, je suis prête à apporter mon expertise et ma touche personnelle à vos projets !</p>
+			</div>
+        </section>
+
+    
+    <style>
+        .barriecito-regular {
+            font-family: "Barriecito", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Section Compétences - Style Scrapbook */
+        #competences {
+            background-image: url("images/rose.png");
+            padding: 80px 20px;
+            position: relative;
+            background-color: #f5f7fa;
+        }
+
+        .competences-title {
+            text-align: center;
+            font-family: "Barriecito", system-ui;
+            padding: 40px 20px;
+            color: #2B5E99 !important;
+            font-size: 60px;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+            position: relative;
+        }
+
+        /* Éléments décoratifs style scrapbook */
+        .competences-title::before {
+            content: "✂";
+            position: absolute;
+            left: 20%;
+            top: -10px;
+            font-size: 30px;
+            color: #D36135;
+            transform: rotate(-15deg);
+        }
+
+        .competences-title::after {
+            content: "✏";
+            position: absolute;
+            right: 25%;
+            bottom: 10px;
+            font-size: 25px;
+            color: #9CAF88;
+            transform: rotate(20deg);
+        }
+
+        .competences-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        /* Style polaroid pour chaque compétence */
+        .competence-polaroid {
+            width: 350px;
+            background-color: #ffffff;
+            box-shadow: 
+                0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 6px 20px rgba(0, 0, 0, 0.19),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            padding: 20px 20px 30px 20px;
+            margin-bottom: 40px;
+            text-align: left;
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 1px solid #e0e6ed;
+        }
+
+        .competence-polaroid:nth-child(2) {
+            transform: rotate(1deg);
+        }
+
+        .competence-polaroid:nth-child(3) {
+            transform: rotate(-1.5deg);
+        }
+
+        .competence-polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        /* Punaise décorative */
+        .competence-polaroid::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: 20px;
+            width: 16px;
+            height: 16px;
+            background: radial-gradient(circle, #FF8D00 30%, #D36135 70%);
+            border-radius: 50%;
+            box-shadow: 
+                inset 0 1px 2px rgba(0,0,0,0.3),
+                0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Titre de catégorie style découpage magazine */
+        .category-title {
+            font-family: "Barriecito", system-ui;
+            font-size: 28px;
+            color: #2B5E99;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+            background: linear-gradient(45deg, #ffb254, #6cb1fa, #B2A4D4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+        }
+
+        /* Style des compétences individuelles */
+        .competence-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .competence-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .competence-label {
+            font-family: "Amiko", sans-serif;
+            font-weight: 600;
+            color: #031A38;
+            font-size: 15px;
+        }
+
+        .competence-percentage {
+            font-family: "Amiko", sans-serif;
+            font-weight: 700;
+            color: #2B5E99;
+            font-size: 13px;
+            background: #f0f4f8;
+            padding: 2px 6px;
+            border-radius: 10px;
+        }
+
+        /* Barre de progression style washi tape */
+        .competence-bar {
+            width: 100%;
+            height: 12px;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    #e8eff5,
+                    #e8eff5 5px,
+                    #d4e2f1 5px,
+                    #d4e2f1 10px
+                );
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #c5d4e8;
+        }
+
+        .competence-progress {
+            height: 100%;
+            border-radius: 6px;
+            width: 0%;
+            transition: width 2.5s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Couleurs de progression par catégorie */
+        .design .competence-progress {
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    #B2A4D4,
+                    #B2A4D4 8px,
+                    #9c8bc7 8px,
+                    #9c8bc7 16px
+                );
+        }
+
+        .communication .competence-progress {
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    #9CAF88,
+                    #9CAF88 8px,
+                    #869b73 8px,
+                    #869b73 16px
+                );
+        }
+
+        .technique .competence-progress {
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    #ffb254,
+                    #ffb254 8px,
+                    #e89d3f 8px,
+                    #e89d3f 16px
+                );
+        }
+
+        /* Éléments décoratifs style scrapbook */
+        .scrap-star {
+            position: absolute;
+            font-size: 20px;
+            color: #D36135;
+            opacity: 0.7;
+        }
+
+        .scrap-heart {
+            position: absolute;
+            font-size: 16px;
+            color: #B2A4D4;
+            opacity: 0.8;
+        }
+
+        .scrap-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #4A90A4;
+            opacity: 0.6;
+        }
+
+        /* Animations */
+        .competence-polaroid {
+            opacity: 0;
+            transform: translateY(50px) rotate(-2deg);
+            animation: fadeInRotate 0.8s ease forwards;
+        }
+
+        .competence-polaroid:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .competence-polaroid:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInRotate {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(-2deg);
+            }
+        }
+
+        .competence-polaroid:nth-child(2) {
+            animation-name: fadeInRotateRight;
+        }
+
+        @keyframes fadeInRotateRight {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(1deg);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .competences-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .competence-polaroid {
+                width: 300px;
+            }
+            
+            .competences-title {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="competences">
+        <div class="competences-title">Mes Compétences</div>
+        
+        <!-- Éléments décoratifs éparpillés -->
+        <div class="scrap-star" style="top: 15%; left: 10%; transform: rotate(-15deg);">⭐</div>
+        <div class="scrap-heart" style="top: 25%; right: 15%; transform: rotate(25deg);">💜</div>
+        <div class="scrap-dot" style="top: 40%; left: 8%;"></div>
+        <div class="scrap-star" style="bottom: 20%; right: 12%; transform: rotate(30deg);">✨</div>
+        <div class="scrap-dot" style="bottom: 15%; left: 15%;"></div>
+        
+        <div class="competences-container">
+            <!-- Design Graphique -->
+            <div class="competence-polaroid design">
+                <h3 class="category-title">🎨 Design Graphique</h3>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Adobe Photoshop</span>
+                        <span class="competence-percentage">90%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="90"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Adobe Illustrator</span>
+                        <span class="competence-percentage">85%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="85"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Adobe InDesign</span>
+                        <span class="competence-percentage">80%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="80"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Identité Visuelle</span>
+                        <span class="competence-percentage">88%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication & Marketing -->
+            <div class="competence-polaroid communication">
+                <h3 class="category-title">📢 Communication</h3>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Réseaux Sociaux</span>
+                        <span class="competence-percentage">92%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="92"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Création de Contenu</span>
+                        <span class="competence-percentage">87%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="87"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Stratégie Digitale</span>
+                        <span class="competence-percentage">83%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="83"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Montage Vidéo</span>
+                        <span class="competence-percentage">85%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technique & Développement -->
+            <div class="competence-polaroid technique">
+                <h3 class="category-title">💻 Technique & Web</h3>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">HTML/CSS</span>
+                        <span class="competence-percentage">78%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="78"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">WordPress</span>
+                        <span class="competence-percentage">82%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="82"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">UX/UI Design</span>
+                        <span class="competence-percentage">75%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="75"></div>
+                    </div>
+                </div>
+                
+                <div class="competence-item">
+                    <div class="competence-name">
+                        <span class="competence-label">Gestion de Projet</span>
+                        <span class="competence-percentage">88%</span>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Animation des barres de progression
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.competence-progress');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressBar = entry.target;
+                        const targetWidth = progressBar.getAttribute('data-width');
+                        
+                        setTimeout(() => {
+                            progressBar.style.width = targetWidth + '%';
+                        }, 800);
+                        
+                        observer.unobserve(progressBar);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            progressBars.forEach(bar => observer.observe(bar));
+        }
+
+        // Démarrer les animations au chargement de la page
+        document.addEventListener('DOMContentLoaded', () => {
+            animateProgressBars();
+        });
+    </script>
+         
+         <section id="projects">
+    <div class="decoration-elements">
+        <div class="deco-element"></div>
+        <div class="deco-element"></div>
+        <div class="deco-element"></div>
+    </div>
+    
+    <div class="titre" id="mesprojets">Mes projets</div>
+    <div id="text-mesprojets">Découvrez mes réalisations classées par Unité d'Enseignement.<br>
+        Cliquez sur une UE pour voir les projets correspondants.
+    </div>
+    
+    <!-- Onglets UE -->
+    <div class="ue-tabs">
+        <button class="ue-tab active" data-ue="concevoir">UE Concevoir</button>
+        <button class="ue-tab" data-ue="exprimer">UE Exprimer</button>
+        <button class="ue-tab" data-ue="comprendre">UE Comprendre</button>
+        <button class="ue-tab" data-ue="developper">UE Développer</button>
+        <button class="ue-tab" data-ue="entreprendre">UE Entreprendre</button>
+    </div>
+
+    <div class="projects-container">
+        
+        <!-- UE Concevoir -->
+        <div class="ue-content active" data-ue="concevoir">
+            <h3 class="ue-category-title">UE Concevoir - Design & Création</h3>
+            <p class="text-concevoir">- AC22.05 | Mettre en place une présence sur les réseaux sociaux</p>
+            <div class="projects-grid">
+                <div class="polaroid">
+                    <img src="images/mkA4.png" alt="Identité visuelle Michael Kors">
+                    <p class="commentaire">Identité visuelle Michael Kors</p>
+                </div>
+                <div class="polaroid">
+                     <a href="https://drive.google.com/drive/folders/1iCy80reb4IHwpWDktWh9h4OwZ-bbVfal?usp=share_link" target="_blank">
+                    <img src="images/A'Kabo.png" alt="Logo A'Kabo">
+                    <p class="commentaire">Identité visuel A'Kabo</p>
+                </a>
+                </div>
+                <div class="polaroid">
+                     <a href="https://drive.google.com/drive/folders/1lta0bv07zxluYJdOuchN5AYULmA1mrpf?usp=share_link" target="_blank">
+                    <img src="images/faithfilpola.png" alt="Logo Faithful Papeterie">
+                    <p class="commentaire">Logo Faithful Papeterie</p>
+                </a>
+                </div>
+                <!-- Ajoute d'autres projets Concevoir ici -->
+            </div>
+        </div>
+
+        <!-- UE Exprimer -->
+        <div class="ue-content" data-ue="exprimer">
+            <h3 class="ue-category-title">UE Exprimer - Communication Visuelle</h3>
+            <p class="text-exprimer">- AC23.02 | Définir une iconographie (illustrations, photographies, vidéos)
+             <br> - AC23.03 | Créer et décliner une identité visuelle (charte graphique)</p>
+            <div class="projects-grid">
+                <div class="polaroid">
+                    <a href="https://drive.google.com/drive/folders/1uaTE8Qm45MrrOik96C8kVQhiMnNl3nP5?usp=share_link" target="_blank">
+                    <img src="images/wonderbreastaffiche.png" alt="Affiche Wonder Breast">
+                    <p class="commentaire">Affiche Wonder Breast</p>
+                </a>
+                </div>
+                <div class="polaroid">
+                    <img src="images/jefilmmonmetier.jpg" alt="jefilmonmetier">
+                    <p class="commentaire">Reportage sur le métier d'experte RH/Paie</p>
+                </div>
+                <div class="polaroid">
+                    <a href="https://drive.google.com/drive/folders/1lta0bv07zxluYJdOuchN5AYULmA1mrpf?usp=share_link" target="_blank">
+                    <img src="images/faithfilpola.png" alt="logofaithful">
+                    <p class="commentaire">Montage photo hivernal</p>
+                    </a>
+                </div>
+                <!-- Ajoute d'autres projets Exprimer ici -->
+            </div>
+        </div>
+
+        <!-- UE Comprendre -->
+        <div class="ue-content" data-ue="comprendre">
+            <h3 class="ue-category-title">UE Comprendre - Analyse & Stratégie</h3>
+             <p class="text-comprendre"> -AC21.01 | Analyser la stratégie de communication ou marketing d’un acteur, d’une organisation au regard d’un secteur ou d’un marché (stratégie, mission, valeurs...)</p>
+            <div class="projects-grid">
+                <div class="polaroid">
+                    <a href="https://drive.google.com/drive/folders/1aOJ-NoCB0P1G-N6NKzEg3vDv6nfnXIXq?usp=share_link" target="_blank">
+                    <img src="images/ansanmA4.png" alt="Projet Ansanm Cowork">
+                    <p class="commentaire">Analyse Ansanm Cowork</p>
+                </a>
+                </div>
+                <!-- Ajoute tes projets UE Comprendre ici -->
+                <div class="polaroid">
+                    <img src="images/jefilmmonmetier.jpg" alt="jefilmonmetier">
+                    <p class="commentaire">Reportage sur le métier d'experte RH/Paie</p>
+                </div>
+                <div class="polaroid">
+                    <img src="images/latè.jpg" alt="stratégie éditorial latè">
+                    <p class="commentaire">Stratégie éditorial latè</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- UE Développer -->
+        <div class="ue-content" data-ue="developper">
+            <h3 class="ue-category-title">UE Développer - Technique & Web</h3>
+            <div class="projects-grid">
+                <!-- Remplace par tes vraies images -->
+                <div class="polaroid">
+                    <img src="images/site-web-portfolio.jpg" alt="Site web portfolio">
+                    <p class="commentaire">Portfolio personnel</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- UE Entreprendre -->
+        <div class="ue-content" data-ue="entreprendre">
+            <h3 class="ue-category-title">UE Entreprendre - Gestion de Projet</h3>
+            <p class="text-entreprendre"></p>
+            <div class="projects-grid">
+                <!-- Remplace par tes vraies images -->
+                <div class="polaroid">
+                    <img src="images/latè.jpg" alt="projetlatè">
+                    <p class="commentaire">Stratégie éditorial latè</p>
+                </div>
+                <div class="polaroid">
+                    <img src="images/enroutequebec.jpeg" alt="voyagecanada">
+                    <p class="commentaire">Mission pédagogique Québec</p>
+                </div>
+                <div class="polaroid">
+                    <img src="images/Femi.jpeg" alt="FEMI">
+                    <p class="commentaire">Participation en tant que jury au FEMI 2025</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+// JavaScript pour la section Projets par UE
+document.addEventListener('DOMContentLoaded', function() {
+    // Gestion des onglets UE
+    const tabs = document.querySelectorAll('.ue-tab');
+    const contents = document.querySelectorAll('.ue-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetUE = this.getAttribute('data-ue');
+            
+            // Retirer la classe active de tous les onglets et contenus
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            // Ajouter la classe active à l'onglet cliqué et son contenu
+            this.classList.add('active');
+            document.querySelector(`.ue-content[data-ue="${targetUE}"]`).classList.add('active');
+        });
+    });
+
+    // Animation des polaroids au survol
+    const polaroids = document.querySelectorAll('.polaroid');
+    polaroids.forEach(polaroid => {
+        polaroid.addEventListener('mouseenter', function() {
+            this.style.zIndex = '10';
+        });
+        
+        polaroid.addEventListener('mouseleave', function() {
+            this.style.zIndex = '1';
+        });
+    });
+});
+</script>
+
+		
+	      
+		<!--Formulaire de contact-->
+        <section id="contact">
+          
+         <div class="container mt-5">
+          <h2 class="text-center">Me Contacter</h2>
+        
+	       <form action="https://formspree.io/f/mldglqpy" method="POST" id="contactForm">
+              <div class="mb-3">
+                 <label for="name" class="form-label">Nom</label>
+                 <input type="text" class="form-control" id="name" name="name" required>
+				  <div class="invalid-feedback">
+                        Veuillez indiquer votre nom.
+                  </div>
+              </div>
+			
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+					  <div class="invalid-feedback">
+                        Veuillez fournir une adresse e-mail valide.
+                    </div>
+                  </div>
+			
+                    <div class="mb-3">
+                     <label for="message" class="form-label">Message</label>
+                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+						<div class="invalid-feedback">
+                        Veuillez écrire votre message.
+                    </div>
+						
+                    </div>
+			          <!--Bouton d'envoie-->
+                       <div class="d-grid gap-2">
+                         <button type="submit" class="btn btn-primary" id="submitButton">
+                          Envoyer le message
+                         </button>
+                       </div>
+        </form>
+	             <!--Alerte-->
+	         <div class="alert alert-success alert-dismissible fade mt-3" role="alert" id="successAlert">
+                   Merci ! Votre message a été envoyé avec succès.
+                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                   </div>
+
+                   <div class="alert alert-danger alert-dismissible fade mt-3" role="alert" id="errorAlert">
+                    Désolé ! Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+              </div>
+            </div>
+    
+               <!--Lien avec mail-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        const successAlert = document.getElementById('successAlert');
+        const errorAlert = document.getElementById('errorAlert');
+
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.classList.add('btn-loading');
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    form.reset();
+                    form.classList.remove('was-validated');
+                    successAlert.classList.add('show');
+                    errorAlert.classList.remove('show');
+                } else {
+                    throw new Error('Erreur réseau');
+                }
+            } catch (error) {
+                errorAlert.classList.add('show');
+                successAlert.classList.remove('show');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.classList.remove('btn-loading');
+            }
+        });
+    </script>
+		
+		</section>
+    </main>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+         <div class="row align-items-center"></div>
+          <div class="col-md-6 py-2"></div>
+           <div class="nav justify-content-center justify-content-md-start"></div>
+            <a href="https://www.instagram.com/creantorcreation?igsh=MTVya3EyZ2hmeWY1aA%3D%3D&utm_source=qr" class="instagram">
+             <img alt="instagram" src="images/bxl-instagram.svg" width="100" height="50" />
+            </a>
+            <a href="https://gp.linkedin.com/in/naelly-creantor-540b012b5" class="linkedin">
+             <img alt="linkedin" src="images/bxl-linkedin.svg" width="100" height="50" />
+            </a>
+        </div>
+        <div class="col-md-6 py-2 text-center">
+            <br>
+             <p class="m-0"> Naelly CREANTOR © 2025 - Tout droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

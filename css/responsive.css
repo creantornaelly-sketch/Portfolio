@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 991px){
+
+    /*Navigateur*/	
+	nav{
+		background-color: #5093E1;
+		padding: 5px 10px;
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+	}
+.navbar-nav {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Header*/
+.main-header .navbar-collapse {
+	border-bottom: 2px solid #2B5E99;
+	border-top: 2px solid #2B5E99;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #5093E1;
+}
+.main-header .navbar-nav > li + li {
+	border-top: 1px solid #2B5E99;
+}
+.main-header .navbaar-nav > li > .nav-link {
+	line-height: 50px;
+	
+}
+.main-header .navbaar-nav > li > .nav-link:after {
+     display: none;
+}
+
+.main-header .navbar-toggler{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 4px 9px;
+        outline: none;
+        box-shadow: none;
+    }
+.main-header .navbar-toggler span{
+        width: 25px;
+        height: 2px;
+        background: #2B5E99;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+
+.main-header .navbar-toggler:not(.collapsed) span:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(2){
+        opacity: 0;
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+/*Acceuil*/	
+.textprairie{
+		font-size: 40px;
+		display: flex;
+		text-align: center;
+        margin-top: -20px;
+	}
+    .about-container{
+        flex-direction: column;
+    }
+
+
+/*À propos*/
+	#portrait {
+		width: 200px; /* taille de l'image*/
+		  height: auto;
+		 
+		  
+	  }
+     #textapropos {
+        color: #2B5E99;
+        text-align: left;
+        padding: 10px 0px;
+        flex-direction: column;
+     }
+
+     #about {
+    background-image: url("rose.png");
+    background-size: 1500px 1520px; /* largeur hauteur */
+	
+}
+
+/*Mes projets*/
+.polaroid2 {
+ width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+	margin-bottom: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+#communication {
+	text-align: center;
+	font-family: "Barriecito", system-ui;
+	padding: 20px;
+	color: #5093E1!important;
+	font-size: 50px;
+	transform: translateY();
+}
+/*Contact*/
+#submitButton {
+    background-color:#2B5E99;
+    margin-left: 10px;
+}
+
+#contact {
+    background-color: #5093E1;
+    padding: 50px 20px;
+    display: flex;
+}
+}
