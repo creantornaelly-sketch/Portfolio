@@ -810,6 +810,49 @@ display: block;
     }
 }
 
+.cv-section {
+  background: #fff8f0; /* couleur type papier */
+  padding: 50px 20px;
+  text-align: center;
+  border: 5px dashed #f4a261; /* effet scrapbooking */
+  border-radius: 15px;
+  margin: 40px auto 100px auto;
+  max-width: 600px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  font-family: "Barriecito", system-ui;
+}
+
+.cv-section h2 {
+  font-size: 2rem;
+  color: #FF8D00;
+  margin-bottom: 10px;
+}
+
+.cv-section p {
+  font-size: 1.1rem;
+  color: #FF8D00;
+  margin-bottom: 20px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #f4a261;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #e76f51;
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+
 /*Me contacter*/
 
 .text-center {
