@@ -604,6 +604,11 @@ display: block;
     position: relative;
 }
 
+.ue-part {
+  margin-bottom: 100px;
+}
+
+
 /* Grille des projets */
 .projects-grid {
     display: grid;
