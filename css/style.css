@@ -857,6 +857,47 @@ display: block;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
 }
 
+/* Personnalisation de la fenêtre surgissante */
+.modal-content {
+    background-image: url("images/papier.jpg"); /* On réutilise ton fond papier */
+    background-color: #fff9f0; /* Couleur de secours */
+    border: 8px solid #FF8D00 !important; /* Ta bordure orange signature */
+    border-radius: 0px !important; /* Look papier découpé (pas d'arrondis) */
+    box-shadow: 10px 10px 0px rgba(43, 94, 153, 0.2); /* Ombre bleue décalée */
+}
+
+.modal-header {
+    border-bottom: 2px dashed #FF8D00; /* Ligne pointillée style découpage */
+}
+
+#m-title {
+    font-family: 'Barriecito', cursive;
+    text-transform: uppercase;
+}
+
+#m-desc {
+    font-family: 'Amiko', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5); /* Effet calque sur le papier */
+    border-radius: 5px;
+}
+
+#m-img {
+    border: 10px solid white; /* L'image dans la modale ressemble aussi à un Polaroid */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: rotate(-1deg); /* Légère rotation pour le style "posé sur la table" */
+}
+
+.modal-footer .btn-primary {
+    background-color: #2B5E99 !important;
+    border: none;
+    font-family: 'Barriecito';
+    padding: 10px 20px;
+}
+
 
 /*Me contacter*/
 
