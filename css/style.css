@@ -975,3 +975,13 @@ font-family: "Amiko", sans-serif;
     font-size: 14px;
     align-items: center;
 }
+.m-legal {
+    font-size: 14px;
+    color: #2B5E99 !important;
+    text-decoration: none;
+}
+
+.m-legal:hover {
+    color: #2f6fb5;  
+    text-decoration: underline; /* optionnel */
+}
